@@ -1,2 +1,9 @@
 Django==5.0.1
 djangorestframework==3.14.0
+psycopg2>=2.9.1
+openmeteo-requests
+requests-cache
+retry-requests
+numpy
+pandas
+requests
