@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>weather</title>
+</head>
+<body>
+  <h1>weather</h1>
+  <p>Enter the name of the city</p>
+  <form method="post" novalidate>
+    {% csrf_token %}
+    <div class="form-group">
+        {{ city_form.city.label_tag }}
+        {{ city_form.city }}
+    </div>
+    <button type="submit" class="btn btn-primary">Get Weather</button>
+  </form>
+</body>
+</html>
